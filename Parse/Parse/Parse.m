@@ -73,7 +73,7 @@ static ParseClientConfiguration *currentParseConfiguration_;
                         configuration.applicationGroupIdentifier == nil ||
                         configuration.containingApplicationBundleIdentifier != nil,
                         @"'containingApplicationBundleIdentifier' must be non-nil in extension environment");
-    PFConsistencyAssert(![self currentConfiguration], @"Parse is already initialized.");
+    //PFConsistencyAssert(![self currentConfiguration], @"Parse is already initialized.");
 
     ParseManager *manager = [[ParseManager alloc] initWithConfiguration:configuration];
     [manager startManaging];
